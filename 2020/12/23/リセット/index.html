@@ -4,14 +4,9 @@
   <meta charset="utf-8">
   
   
-  <meta name="description" content="code for simple softmax and do some test
-&amp;quot;&amp;quot;&amp;quot;Softmax.&amp;quot;&amp;quot;&amp;quot;
-import numpy as np
-
-scores = [3.0, 1.0, 0.2]
-
-def softmax(x):
-  " />
+  <meta name="description" content="走り出せればほら掴めるから一度話した明日へのチケットこの場所から始まるから取り戻すためもう一度リセット
+改札を出て目に映るサンセットオレンジ色が滲んで見えて流す涙を静かに照らして帰る場所だっていてる気がして並んで歩く程に人と比べてばかりいつの間にが背伸びして強がる自分に気付く
+走り出せればほら掴める" />
   
 
   
@@ -22,20 +17,20 @@ def softmax(x):
   
   
   
-  <title>Learning note! | 花の様に</title>
+  <title>リセット | 花の様に</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="code for simple softmax and do some test &quot;&quot;&quot;Softmax.&quot;&quot;&quot; import numpy as np  scores &#x3D; [3.0, 1.0, 0.2]  def softmax(x):     &quot;&quot;&quot;Compute softmax values for eac">
+  <meta name="description" content="走り出せればほら掴めるから一度話した明日へのチケットこの場所から始まるから取り戻すためもう一度リセット 改札を出て目に映るサンセットオレンジ色が滲んで見えて流す涙を静かに照らして帰る場所だっていてる気がして並んで歩く程に人と比べてばかりいつの間にが背伸びして強がる自分に気付く 走り出せればほら掴めるから一度話した明日へのチケットこの場所から始まるから取り戻すためもう一度リセット 過去に縛られ枷を引">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Learning note!">
-<meta property="og:url" content="http://hanayo.cn/2020/09/10/2016-12-29-learning-note/index.html">
+<meta property="og:title" content="リセット">
+<meta property="og:url" content="http://hanayo.cn/2020/12/23/%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88/index.html">
 <meta property="og:site_name" content="花の様に">
-<meta property="og:description" content="code for simple softmax and do some test &quot;&quot;&quot;Softmax.&quot;&quot;&quot; import numpy as np  scores &#x3D; [3.0, 1.0, 0.2]  def softmax(x):     &quot;&quot;&quot;Compute softmax values for eac">
+<meta property="og:description" content="走り出せればほら掴めるから一度話した明日へのチケットこの場所から始まるから取り戻すためもう一度リセット 改札を出て目に映るサンセットオレンジ色が滲んで見えて流す涙を静かに照らして帰る場所だっていてる気がして並んで歩く程に人と比べてばかりいつの間にが背伸びして強がる自分に気付く 走り出せればほら掴めるから一度話した明日へのチケットこの場所から始まるから取り戻すためもう一度リセット 過去に縛られ枷を引">
 <meta property="og:locale">
-<meta property="article:published_time" content="2020-09-10T12:40:07.389Z">
-<meta property="article:modified_time" content="2020-09-10T12:40:07.389Z">
+<meta property="article:published_time" content="2020-12-23T02:03:56.000Z">
+<meta property="article:modified_time" content="2020-12-23T02:11:08.796Z">
 <meta property="article:author" content="Alan Jager">
-<meta property="article:tag" content="note">
-<meta property="article:tag" content="machine learning">
+<meta property="article:tag" content="diary">
+<meta property="article:tag" content="lyrics">
 <meta name="twitter:card" content="summary">
   
   
@@ -80,7 +75,7 @@ def softmax(x):
 </header>
 
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-2016-12-29-learning-note" class="post-2016-12-29-learning-note post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-リセット" class="post-リセット post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
@@ -88,53 +83,42 @@ def softmax(x):
         
   
     <h1 class="entry-title article-title">
-      Learning note!
+      リセット
     </h1>
   
 
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://hanayo.cn/2020/09/10/2016-12-29-learning-note/" data-id="cjt3tjk1e0000g0d8mni81g1f" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://hanayo.cn/2020/12/23/%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88/" data-id="ckj0s1zie0001njcaft3m0lkx" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p>code for simple softmax and do some test</p>
-<pre><code>&quot;&quot;&quot;Softmax.&quot;&quot;&quot;
-import numpy as np
-
-scores = [3.0, 1.0, 0.2]
-
-def softmax(x):
-    &quot;&quot;&quot;Compute softmax values for each sets of scores in x.&quot;&quot;&quot;
-    e_x = np.exp(x - np.max(x))
-    return e_x / e_x.sum()
-
-print(softmax(scores))
-
-# Plot softmax curves
-import matplotlib.pyplot as plt
-x = np.arange(-2.0, 6.0, 0.1)
-scores = np.vstack([x, np.ones_like(x), 0.2 * np.ones_like(x)])
-
-plt.plot(x, softmax(scores).T, linewidth=2)
-plt.show()</code></pre>
+        <p>走り出せればほら<br>掴めるから<br>一度話した<br>明日へのチケット<br>この場所から<br>始まるから<br>取り戻すため<br>もう一度リセット</p>
+<p>改札を出て<br>目に映るサンセット<br>オレンジ色が<br>滲んで見えて<br>流す涙を<br>静かに照らして<br>帰る場所だって<br>いてる気がして<br>並んで歩く程に<br>人と比べてばかり<br>いつの間にが背伸びして<br>強がる自分に気付く</p>
+<p>走り出せればほら<br>掴めるから<br>一度話した<br>明日へのチケット<br>この場所から<br>始まるから<br>取り戻すため<br>もう一度リセット</p>
+<p>過去に縛られ<br>枷を引きずって<br>身動きとれなくなってしまた<br>消えて忘れてしまいたいなんて<br>被害者ぶって逃げていただけ<br>いつもより温い風呂の中で自問自答<br>悩んでいたことなんて<br>ちっぽけなことだったんだ</p>
+<p>挫けそうな時は<br>立ち止まで<br>見つめ直して<br>自分らしさへ<br>諦めない<br>心を掴め<br>まだ最初から<br>もう一度リセット</p>
+<p>色なことを大袈裟にして<br>優しい心なくし傷つけ<br>自分が一番可愛くなっえ<br>気つけば今は一人ぼっちで</p>
+<p>まだ明日からは<br>笑い合えよう<br>まずはここから<br>変えられるよ</p>
+<p>走り出せればほら<br>掴めるから<br>一度話した<br>明日へのチケット<br>この場所から<br>始まるから<br>取り戻すため<br>もう一度リセット</p>
+<p>広がる世界は<br>僕だけのものさ<br>もう一度取り戻すリセット<br>踏み出す力が<br>僕を満たすから<br>もう一度走り出すスタット</p>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2020/09/10/2016-12-29-learning-note/">
-    <time datetime="2020-09-10T12:40:07.389Z" class="entry-date">
-        2020-09-10
+    <a href="/2020/12/23/%E3%83%AA%E3%82%BB%E3%83%83%E3%83%88/">
+    <time datetime="2020-12-23T02:03:56.000Z" class="entry-date">
+        2020-12-23
     </time>
 </a>
     
     
   <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/machine-learning/" rel="tag">machine learning</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/note/" rel="tag">note</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/diary/" rel="tag">diary</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/lyrics/" rel="tag">lyrics</a></li></ul>
 
     </footer>
 </article>
@@ -144,10 +128,10 @@ plt.show()</code></pre>
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2020/09/10/2017-8-11-summary/" rel="prev"><span class="meta-nav">←</span> 2017.2.2</a></span>
+        <span class="nav-previous"><a href="/2020/12/23/hero/" rel="prev"><span class="meta-nav">←</span> hero</a></span>
     
     
-        <span class="nav-next"><a href="/2020/09/10/2017-1-29-diary/" rel="next">2016.1.29 Diary! <span class="meta-nav">→</span></a></span>
+        <span class="nav-next"><a href="/2020/12/23/%E9%81%93/" rel="next">道 <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
